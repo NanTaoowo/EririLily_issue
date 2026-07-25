@@ -1,6 +1,6 @@
-name: 🐛 Bug 反馈
+name: 🐛 Bug/问题 反馈
 description: 提交游戏 Bug 报告，帮助我们修复问题
-title: "[Bug]: "
+title: "[Bug/问题]: "
 labels: ["bug", "待确认"]
 body:
   - type: markdown
@@ -9,29 +9,12 @@ body:
         感谢你花时间填写这份 Bug 报告！
         请尽量提供详细信息，以便我们更快定位和修复问题。
 
-  - type: dropdown
-    id: platform
-    attributes:
-      label: 游戏平台
-      description: 你是在哪个平台上游玩时遇到此 Bug 的？
-      options:
-        - Windows (Steam)
-        - Windows (独立客户端)
-        - macOS
-        - Linux
-        - Android
-        - iOS
-        - 主机 (PlayStation / Xbox / Switch)
-        - 其他
-    validations:
-      required: true
-
   - type: input
     id: version
     attributes:
       label: 游戏版本号
-      description: 请提供游戏内显示的版本号（例如 v1.2.3）
-      placeholder: "例如：v1.2.3"
+      description: 请提供游戏内显示的版本号（例如 v26.2）
+      placeholder: "例如：v26.2"
     validations:
       required: true
 
@@ -71,16 +54,6 @@ body:
       description: 请拖拽或粘贴截图、录屏或错误日志，这能极大帮助我们定位问题。
       placeholder: "请粘贴图片或日志文本"
 
-  - type: textarea
-    id: environment
-    attributes:
-      label: 设备与环境信息（选填）
-      description: 请补充你的设备型号、操作系统版本、显卡驱动等信息（如有）。
-      placeholder: |
-        - 设备: PC (i7-9700K, RTX 2080)
-        - OS: Windows 11 22H2
-        - 驱动版本: 531.79
-
   - type: checkboxes
     id: confirm
     attributes:
@@ -88,5 +61,5 @@ body:
       options:
         - label: 我已搜索过现有 Issues，确认没有重复提交该问题。
           required: true
-        - label: 我已更新到最新版本，问题仍然存在。
+        - label: 我已删除craftengine模组，问题仍然存在。
           required: false
