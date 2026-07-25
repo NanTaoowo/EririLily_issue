@@ -19,7 +19,7 @@ body:
       required: true
 
   - type: input
-    id: version
+    id: ID
     attributes:
       label: 游戏ID
       description: 请提供你的游戏ID（例如 EririLily）
