@@ -49,8 +49,6 @@ body:
         2. 点击 '...'
         3. 滑动到 '...'
         4. 看到错误
-    validations:
-      required: true
 
   - type: textarea
     id: expected
