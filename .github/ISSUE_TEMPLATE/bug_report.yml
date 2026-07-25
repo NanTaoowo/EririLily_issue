@@ -12,9 +12,18 @@ body:
   - type: input
     id: version
     attributes:
-      label: 游戏版本号
-      description: 请提供游戏内显示的版本号（例如 v26.2）
+      label: 客户端版本
+      description: 请提供客户端的版本号（例如 v26.2）
       placeholder: "例如：v26.2"
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: 游戏ID
+      description: 请提供你的游戏ID（例如 EririLily）
+      placeholder: "例如：EririLily"
     validations:
       required: true
 
@@ -23,7 +32,10 @@ body:
     attributes:
       label: Bug 描述
       description: 清晰简洁地描述这个 Bug 是什么。
-      placeholder: "例如：在打开背包时游戏闪退..."
+      placeholder: |
+        例如：在打开背包时游戏闪退...
+        坐标: -1200 63 100
+        时间: 18:30
     validations:
       required: true
 
